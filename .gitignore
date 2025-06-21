@@ -88,3 +88,4 @@ build/
 configmap.yaml
 job.yaml
 script.sh
+docker-creds
