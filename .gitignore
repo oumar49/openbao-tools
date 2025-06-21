@@ -1,0 +1,90 @@
+# Ignore Docker build artifacts
+*.tar
+*.tar.gz
+*.img
+*.iso
+*.log
+*.pid
+
+# Docker ignore
+.dockerignore
+
+# GitHub Actions runner artifacts
+.github/workflows/*.bak
+.github/workflows/*.tmp
+
+# Kustomize build artifacts
+*.generated.yaml
+*.build.yaml
+
+# Secret and config files (should be handled via env/Secrets Manager)
+.env
+*.env
+.env.*
+
+# Kubernetes secrets or config
+*.secret.yaml
+*.secret.yml
+*.config.yaml
+*.config.yml
+
+# Vim swap files
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# MacOS
+.DS_Store
+
+# Node/npm/yarn (if used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if used)
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Shell history or cache
+.history
+*.bak
+*.tmp
+*.cache
+
+# Terraform state (if applicable)
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Docker Compose override
+docker-compose.override.yml
+
+# Logs
+logs/
+*.log
+
+# CI/CD temp files
+*.bak.*
+*.retry
+*.retry.*
+
+# Ignore kubectl cached output
+.kube/
+
+# Ignore binary outputs
+bin/
+out/
+build/
+
+# Generated files by configMapGenerator or CI
+configmap.yaml
+job.yaml
+script.sh
